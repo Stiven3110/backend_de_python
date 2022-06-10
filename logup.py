@@ -3,6 +3,7 @@ from tkinter import*
 from tkinter import messagebox
 import pymysql
 
+#el inicio de sesion y el de registrar usuario estan en el mismo codigo
 def menu_pantalla():
     global pantalla
     pantalla=Tk()
