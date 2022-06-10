@@ -1,0 +1,28 @@
+{
+    "$schema":"https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://mocks.com/product.schema.json",
+    "title": "mock",
+    "description": "realizacion de mocks en pruebas",
+    "type": "object",
+    "properties": {
+      "productId": {
+        "description": "identificar estilos y variedades de codigos",
+        "type": "integrado"
+      },
+      "productName": {
+        "description": "mocks_prueba",
+        "type": "string"
+      },
+      
+      "tags": {
+        "description": "codigos variados",
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "uniqueItems": true
+      }
+    },
+    "required": [ "productId", "productName" ]
+  }
